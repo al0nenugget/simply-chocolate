@@ -1035,6 +1035,31 @@ button {
   .img-box {
     width: 600px;
     margin-bottom: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(17, 17, 17, 0.3) 0%,
+        rgba(17, 17, 17, 0.3) 100%
+      ),
+      url("../img/how-made/image_desk.png"),
+      lightgray -158px -335px / 187% 186% no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-box {
+      background: linear-gradient(
+          0deg,
+          rgba(17, 17, 17, 0.3) 0%,
+          rgba(17, 17, 17, 0.3) 100%
+        ),
+        url("../img/how-made/image_desk@2x.png"),
+        lightgray -158px -335px / 187% 186% no-repeat;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
   .made-btn {
   }
