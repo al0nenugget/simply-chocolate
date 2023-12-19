@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Header -->
-    <hear class="header">
+    <hear id="hader" class="header">
       <div class="wrapper container">
         <a href="./index.html" class="logo" aria-label="Go to the main page">
           <span class="logo-symply-text">SIMPLY</span>CHOCOLATE
@@ -39,13 +39,16 @@
         <nav class="navigation">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link" aria-label="Go to the 'Home' section"
+              <a
+                href="#hader"
+                class="nav-link"
+                aria-label="Go to the 'Home' section"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                href=""
+                href="#made"
                 class="nav-link"
                 aria-label="Go to the 'How it’s made?' section"
                 >How it’s made?</a
@@ -53,7 +56,7 @@
             </li>
             <li class="nav-item">
               <a
-                href=""
+                href="#loved"
                 class="nav-link"
                 aria-label="Go to the 'Chocolate is loved' section"
                 >Chocolate is loved</a
@@ -116,7 +119,12 @@
               <button class="hero-buy-btn" type="button">Buy now</button>
             </li>
             <li class="left-btns-item">
-              <a href="#made" class="hero-made-link">How it’s made</a>
+              <a
+                href="#made"
+                class="hero-made-link"
+                aria-label="Go to the 'How it’s made' section"
+                >How it’s made</a
+              >
             </li>
           </ul>
 
@@ -527,7 +535,7 @@
     <!-- End Top Sellers -->
 
     <!-- IS Loved -->
-    <section class="loved">
+    <section id="loved" class="loved">
       <div class="loved-wrapper container">
         <h2 class="loved-title">
           <span class="title-decoration">Chocolate</span> is loved
@@ -585,5 +593,101 @@
       </div>
     </section>
     <!-- End IS Loved -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <p class="footer-title">
+            <span class="f-title-orange">Chocolate</span> a delicious cure for a
+            bad day
+          </p>
+          <div class="f-top-box">
+            <address class="f-contact">
+              <p class="f-contact-title">Contact us</p>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <a href="tel:+380684439426" class="contact-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <a href="mailto:simplychoc@gmail.com" class="contact-link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="social-box">
+              <p class="social-title">Social networks</p>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg class="social-icon">
+                      <use xlink:href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg class="social-icon">
+                      <use xlink:href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg class="social-icon">
+                      <use xlink:href="./img/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="f-bottom-box">
+          <nav class="f-nav">
+            <ul class="f-nav-list">
+              <li class="f-nav-item">
+                <a
+                  href="#hader"
+                  class="f-nav-link"
+                  aria-label="Go to the 'Home' section"
+                  >Home</a
+                >
+              </li>
+              <li class="f-nav-item">
+                <a
+                  href="#made"
+                  class="f-nav-link"
+                  aria-label="Go to the 'How it’s made' section"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="f-nav-item">
+                <a
+                  href="#loved"
+                  class="f-nav-link"
+                  aria-label="Go to the 'Chocolate is loved' section"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="f-form">
+            <!-- <label for="" class="f-form-label" ></label> -->
+            <input
+              type="email"
+              class="f-form-input"
+              name="user-email"
+              placeholder="Enter your email"
+            />
+            <button class="f-form-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>
