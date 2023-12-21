@@ -30,78 +30,87 @@
             <use href="./img/icons.svg#icon-logo-chocolate"></use>
           </svg>
         </a>
-        <button class="menu-btn">
+        <button class="menu-btn" data-open-menu>
           <svg class="menu-icon">
             <title>Open menu button</title>
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a
-                href="#hader"
-                class="nav-link"
-                aria-label="Go to the 'Home' section"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="#made"
-                class="nav-link"
-                aria-label="Go to the 'How it’s made?' section"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="#loved"
-                class="nav-link"
-                aria-label="Go to the 'Chocolate is loved' section"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-          <ul class="social">
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                aria-label="Go to the facebook company page"
-              >
-                <svg class="social-icon">
-                  <title>faceboock</title>
-                  <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                aria-label="Go to the instagram company page"
-              >
-                <svg class="social-icon">
-                  <title>instagram</title>
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                aria-label="Go to the twitter company page"
-              >
-                <svg class="social-icon">
-                  <title>twitter</title>
-                  <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="menu" data-menu>
+          <button class="h-menu-close-btn" data-close-menu>
+            <svg class="menu-close-btn-icon">
+              <use xlink:href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a
+                  href="#hader"
+                  class="nav-link current"
+                  aria-label="Go to the 'Home' section"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#made"
+                  class="nav-link"
+                  aria-label="Go to the 'How it’s made?' section"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#loved"
+                  class="nav-link"
+                  aria-label="Go to the 'Chocolate is loved' section"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+
+            <ul class="social">
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  aria-label="Go to the facebook company page"
+                >
+                  <svg class="social-icon">
+                    <title>faceboock</title>
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  aria-label="Go to the instagram company page"
+                >
+                  <svg class="social-icon">
+                    <title>instagram</title>
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  aria-label="Go to the twitter company page"
+                >
+                  <svg class="social-icon">
+                    <title>twitter</title>
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </hear>
     <!-- End Header -->
@@ -589,7 +598,9 @@
             </p>
           </li>
         </ul>
-        <button class="loved-review-btn" type="button">Leave a review</button>
+        <button class="loved-review-btn" type="button" data-open-modal>
+          Leave a review
+        </button>
       </div>
     </section>
     <!-- End IS Loved -->
@@ -689,5 +700,98 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <button class="close-modal-btn" data-close-modal>
+          <svg class="close-icon">
+            <use xlink:href="/img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+          leave a review about
+          <span class="title-decoration">our chocolate</span>
+        </p>
+        <form action="" class="modal-form" name="reviews-form">
+          <div class="modal-field">
+            <label for="use-name" class="modal-label">Name</label>
+            <div class="modal-input-box">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="use-name"
+              />
+              <svg class="modal-input-icon">
+                <use xlink:href="./img/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-mail" class="modal-label">Email</label>
+            <div class="modal-input-box">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="user-mail"
+              />
+              <svg class="modal-input-icon">
+                <use xlink:href="./img/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-label">Phone number</label>
+            <div class="modal-input-box">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="modal-input-icon">
+                <use xlink:href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="form-descr" class="modal-label">Comment</label>
+            <div class="modal-input-box">
+              <textarea
+                class="modal-input-text-area"
+                name="user-description"
+                id="form-descr"
+                placeholder="Enter text"
+                rows="8"
+              ></textarea>
+            </div>
+          </div>
+          <div class="checkbox-field">
+            <label for="checkbox" class="checkbox-label"
+              >I accept the terms and conditions of the
+              <span class="title-decoration-link">Privacy Policy</span></label
+            >
+            <span class="checkbox-border"></span>
+            <!-- <div class="checkbox-input-box"> -->
+            <input
+              type="checkbox"
+              value="policy"
+              class="visually-hidden checkbox-input"
+              name="user-policy"
+              id="checkbox"
+            />
+            <!-- </div> -->
+            <svg class="checkbox-icon">
+              <use xlink:href="./img/icons.svg#icon-checkbox"></use>
+            </svg>
+          </div>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
