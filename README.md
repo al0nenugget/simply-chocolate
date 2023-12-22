@@ -1,3 +1,3 @@
 # simply-chocolate
 
-Adaptive single page site
+This is an adaptive single page website called Simply Chocolate
